@@ -1,0 +1,5 @@
+pycocotools==2.0.8  # use in OS linux or macos
+# pycocotools-windows==2.0.0.2  # use in OS windows
+torch==2.6.0
+torch-vision==0.1.6.dev0
+pixellib==0.7.1
