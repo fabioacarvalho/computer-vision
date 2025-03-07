@@ -9,3 +9,6 @@ Object detection:
 Face detection:
 - [OpenCV](https://github.com/fabioacarvalho/computer-vision/tree/main/face-detection/open-cv)
 - [Face Recognition](https://github.com/fabioacarvalho/computer-vision/tree/main/face-detection/face-recognition)
+
+Image segmentation:
+- [PixelLib](https://github.com/fabioacarvalho/computer-vision/tree/main/object-detection/pixellib)
