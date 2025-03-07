@@ -96,3 +96,33 @@ video_path = detector.detectObjectsFromVideo(
 print(video_path)
 
 ```
+
+---
+
+## Image Classification
+
+To use this model, we need go to docs and downlaod the model called `ResNet50 Model`, after download we need put this file into directory model.
+
+<br>
+
+```python
+from imageai.Classification import ImageClassification
+import os
+
+execution_path = os.getcwd()
+prediction = ImageClassification()
+prediction.setModelTypeAsResNet50()
+prediction.setModelPath(os.path.join(execution_path, "model/resnet50-19c8e357.pth"))
+prediction.loadModel()
+
+
+predictions, probabilities_percent = prediction.classifyImage(
+    os.path.join(execution_path, "img/image2.jpg"),
+    result_count=5,
+    
+)
+
+for indice in range(len(predictions)):
+    print(predictions[indice] + " : " + probabilities_percent[indice])
+```
+
